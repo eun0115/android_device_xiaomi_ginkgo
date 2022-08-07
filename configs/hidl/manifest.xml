@@ -262,6 +262,10 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <name>IBluetoothHci</name>
             <instance>default</instance>
         </interface>
+        <interface>
+            <name>ISensorManager</name>
+            <instance>default</instance>
+        </interface>
     </hal>
     <hal format="hidl">
         <name>android.hardware.bluetooth.audio</name>
