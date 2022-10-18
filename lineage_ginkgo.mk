@@ -41,12 +41,26 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Rom flags
-RICE_MAINTAINER := _.rasend
+RICE_MAINTAINER := _.rasend x eun0115
 RICE_OFFICIAL := true
-RICE_DEVICE := ginkgo
-TARGET_ENABLE_BLUR := true 
-TARGET_SUPPORTS_QUICK_TAP := true 
-TARGET_FACE_UNLOCK_SUPPORTED := true 
-TARGET_BUILD_GRAPHENEOS_CAMERA := true
+TARGET_ENABLE_BLUR := true
+TARGET_SUPPORTS_QUICK_TAP := true
+
 WITH_GMS := true
 TARGET_GAPPS_ARCH := arm64
+TARGET_OPTOUT_GOOGLE_TELEPHONY := true
+
+# Aperture Camera
+TARGET_BUILD_APERTURE_CAMERA := true
+
+# Graphene Camera
+TARGET_BUILD_GRAPHENEOS_CAMERA := false
+
+# AudioFx
+TARGET_EXCLUDES_AUDIOFX := true
+
+# Package Type (By default it says AOSP,lets make it Vanilla instead)
+RICE_PACKAGE_TYPE := Pixel 
+
+# Spoof build description/fingerprint as pixel device
+TARGET_USE_PIXEL_FINGERPRINT := true
