@@ -72,6 +72,9 @@ void vendor_load_properties()
     // Set camera model for EXIF data
     property_override("persist.vendor.camera.model", model);
 
+    // Set maintainer flag
+    property_override("ro.rice.maintainer", "_.rasend | eun0115");
+
     // Set dalvik heap configuration
     string heapstartsize, heapgrowthlimit, heapsize, heapminfree,
 			heapmaxfree, heaptargetutilization;

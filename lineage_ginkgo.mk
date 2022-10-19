@@ -41,7 +41,6 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Rom flags
-RICE_MAINTAINER := _.rasend x eun0115
 RICE_OFFICIAL := true
 TARGET_ENABLE_BLUR := true
 TARGET_SUPPORTS_QUICK_TAP := true
